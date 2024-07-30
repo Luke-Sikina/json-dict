@@ -27,7 +27,7 @@ public class ConceptNodeParser {
 
     public Optional<Map<String, HPDSConceptNode>> parse(File rawJson) {
         if (!rawJson.exists()) {
-            LOG.error("{} DNE. Exiting.", rawJson.getPath());
+            LOG.error("{} DNE. Exiting. If you need to download the data, try running ./curl_data.sh", rawJson.getPath());
         }
         LOG.info("Parsing {}", rawJson.getName());
         TypeReference<HPDSTopLevelResponse> ref = new TypeReference<>() {};

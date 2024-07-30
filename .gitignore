@@ -36,3 +36,9 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Data Dirs ###
+in/*
+!in/README.md
+out/*
+!out/README.md
