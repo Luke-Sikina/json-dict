@@ -5,6 +5,7 @@ Standalone translator for GIC Data Dictionary
 ## Requirements
 
 - Python (this seems to work on 2.x and 3.x)
+  - Make sure `requests` is installed
 - Access to GIC
 
 ## Usage
@@ -19,10 +20,11 @@ Don't share this token with anyone. They can use it to impersonate you.
 ### Run the script
 
 1. Open a terminal (I'm assuming OSX/*nix/WSL)
-2. Set your token: `export TOKEN=<the token value you copied>`
+2. Set your token: `export TOKEN=<the token value you copied>`  
+    You can sanity check this by making sure `echo $TOKEN` returns your pasted text
 3. Clone this repo: `git clone https://github.com/Luke-Sikina/json-dict.git`
 4. Cd into the repo: `cd json-dict`
-5. Run the script: `python pull_and_convert.py`
+5. Run the script: `python pull_and_convert.py` 
 6. The output will look something like this:
 ```
 Checking token...
